@@ -1,0 +1,832 @@
+:root {
+  /* Primary Gradient Colors */
+  --gradient-blue: #3b82f6;
+  --gradient-purple: #a855f7;
+  --gradient-pink: #ec4899;
+
+  /* Background Colors */
+  --bg-main: #111827;        /* Hero & page background */
+  --bg-dark-gray: #1f2937;   /* Gradient transition */
+  --bg-card: #1e293b;        /* Cards (internship/experience) */
+  --bg-header: #ec4899;      /* Header top bar */
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-subtle: #d1d5db;
+  --text-heading: #ec4899;
+
+  /* Button Backgrounds */
+  --btn-pink: #ec4899;
+  --btn-blue: #3b82f6;
+
+  /* Utility Colors */
+  --code-green: #10b981;     /* Used in code editor sidebar */
+
+  /* Font size */
+  --navLogoText : 1.75rem;
+  --navMenuText : 1.125rem;
+  --headingSize : 2.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-main);
+}
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar{
+    background-color: rgb(0, 0,0);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+    padding-right: 10%;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.navbar .menu a{
+    text-decoration: none;
+    font-size: var(--navMenuText);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+.navbar .menu a:hover{
+    color: var(--gradient-blue);
+    scale: 1.1;
+    transition: all .3s ease;
+}
+#infoHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+#infoHeading h1{
+    background: linear-gradient(to right, var(--gradient-blue), var(--gradient-pink), var(--gradient-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+#infoHeading p{
+    color: var(--text-white);
+    font-size: 1.5rem;
+}
+#mainButtons{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 24px;
+}
+#mainButtons a{
+    text-decoration: none;
+    color: var(--text-white);
+    background: linear-gradient(to right, var(--gradient-blue), var(--gradient-pink), var(--gradient-purple));
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 8px;
+    cursor: pointer;
+
+}
+#mainButtons a:last-child{
+    background: linear-gradient(to right,var(--gradient-purple), var(--gradient-blue) );
+}
+#mainButtons a:hover{
+    border: 1px solid var(--text-white);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+#experience{
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-dark-gray);
+    box-shadow: 0 5px 15px var(--code-green);
+}
+#experience h1{
+    color: var(--text-heading);
+    font-size: var(--headingSize);
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.internship{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 24px;
+}
+.internshipTab{
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.20),-5px -10px 10px rgba(0, 0, 0, 0.20);
+    height: 200px;
+    width: 40%;
+ 
+}
+
+.internshipTab:hover{
+    box-shadow: 5px 5px 15px var(--gradient-pink);
+    scale: 1.01;
+    transition: all 0.3s ease;
+}
+
+.internshipTab h3{
+    color: var(--gradient-blue);
+    padding: 16px;
+}
+
+.internshipTab p{
+    color: var(--text-subtle);
+    padding: 16px;
+    margin-top: -24px;
+}
+
+/* Projects Section CSS CODE */
+
+#projectMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+#projectMain h1{
+    color: var(--code-green);
+    margin-top: 24px;
+    padding: 5px;
+    font-size: var(--headingSize);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.projectTab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.20),-5px -10px 10px rgba(0, 0, 0, 0.20);
+    width: 25%;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 400px;
+    background-color: var(--bg-dark-gray);
+}
+.projectTab:hover{
+    box-shadow: 2px 4px 5px var(--code-green);
+    scale: 1.03;
+    transition: all .3s ease;
+}
+
+.projectTab h2{
+    color: var(--gradient-purple);
+    font-size: 32px;
+}
+.projectTab p{
+    color: var(--text-white);
+    text-align: justify;
+}
+.technology{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    gap: 8px;
+}
+.technology strong{
+    color: var(--text-white);
+    font-size: 16px;
+}
+.technology span{
+    color: var(--text-subtle);
+    font-size: 14px;
+}
+.projectLinks{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    align-items: center;
+}
+.projectLinks a{
+    text-decoration: none;
+    color: var(--gradient-pink);
+    font-size: 16px;
+    cursor: pointer;
+}
+.projectLinks a:hover{
+    color: var(--gradient-purple);
+    font-size: 18px;
+    scale: 1.03;
+    transition: all .3s ease;
+}   
+
+
+
+#techStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-dark-gray);
+    margin-bottom: 24px;
+    box-shadow: 0px 5px 15px var(--gradient-blue);
+}
+#techStack h1{
+    color: var(--gradient-purple);
+    font-size: var(--headingSize);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.skillsRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 24px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-card);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20),-5px -5px 10px rgba(0, 0, 0, 0.20);
+    width: 150px;
+    height: 75px;
+    border-radius: 16px;
+    gap: 8px;
+    padding: 5px;
+}
+.skills:hover{
+    box-shadow: 2px 4px 5px var(--gradient-purple);
+    scale: 1.02;    
+    font-size:1.3rem;
+    transition: all 0.3s ease;
+}
+.skills i{
+    color: var(--btn-blue);
+    font-size: 1.25rem;
+}
+.skills span{
+    color: var(--text-subtle);
+    font-size: 1.25rem;
+}
+.skills i:hover,.skills span:hover{
+    scale: 1.2;
+    transition: all 0.3s ease;
+}
+
+
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactMe h1{
+    text-align: center;
+    color: var(--gradient-blue);
+    font-size: var(--headingSize);
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+#contactDiv{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    gap: 24px;
+}
+form{
+    width: 50%;
+}
+form h2{
+    color: var(--gradient-purple);
+}
+#SocialMedia{
+    width: 50%;
+}
+#SocialMedia h2{
+    color: var(--gradient-purple);
+    text-align: center;
+}
+.iconRow{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.20),-5px -10px 10px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.icon a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--code-green);
+}
+.icon a i{
+    font-size: 2rem;
+}
+.icon:hover{
+    box-shadow: 2px 4px 5px var(--gradient-purple);
+    scale: 1.03;    
+    font-size:1.4rem;
+    transition: all 0.3s ease;
+}
+footer{
+    background: linear-gradient(to right, var(--gradient-blue), var(--gradient-pink), var(--gradient-purple));
+    color: var(--text-white);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -5px 10px var(--code-green);
+}
+
+#scrollTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 100;
+  background-color: var(--gradient-purple);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: .6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Background */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-modal-content {
+  position: relative;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 720px;
+  background: transparent;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+/* Responsive Design For Laptop */
+@media (min-width: 800px) and (max-width: 1130px) {
+  
+  .navbar{
+    justify-content: center;
+    padding-right:0; 
+}
+
+.navbar .menu {
+    justify-content: center;
+}
+.internship{
+    margin-left: 8%;
+    margin-right: 8%;
+    
+}
+.internshipTab{
+    width: 50%; 
+}
+
+#projectMain{
+    margin-left: 8%;
+    margin-right: 8%;
+    
+}
+.projects {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projectTab {
+    width: calc(50% - 24px); /* Two per row with gap */
+    box-sizing: border-box;
+}
+
+.skillsRow{
+    
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.skills{
+    width: 120px;
+    height: 60px;
+}
+.skills i{
+    font-size: 1.15rem;
+}
+.skills span{
+    font-size: 1.15rem;
+}
+
+
+}
+
+/* Responsive Design For Tablet (500px - 799px) */
+@media (min-width: 500px) and (max-width: 799px) {  
+
+
+body, html {
+    
+    scroll-padding-top: 100px;
+}
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0d1117; /* must have background! */
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .navbar .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #infoHeading h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #infoHeading p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #mainButtons {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  #mainButtons a {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  .internship {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    margin-bottom: 24px;
+  }
+
+  .internshipTab {
+    width: 90%;
+    height: auto;
+  }
+
+  #projectMain {
+    margin: 0 5%;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectTab {
+    width: 90%;
+    min-height: auto;
+  }
+
+  #techStack {
+  padding: 24px 0px;
+  text-align: center;
+}
+
+#techStack h2 {
+  font-size: 2.5rem;
+  color: #bb00ff;
+  margin-bottom: 24px;
+}
+
+.skillsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px; /* vertical and horizontal gap */
+  margin: 0 auto;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.skills {
+  background-color: var(--bg-card);
+  padding: 20px 25px;
+  border-radius: 15px;
+  width: 120px;
+  height: 90px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20),-5px -5px 10px rgba(0, 0, 0, 0.20);
+  transition: transform 0.3s ease;
+}
+
+.skills:hover {
+  transform: scale(1.05);
+}
+
+.skills i {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1e90ff;
+}
+
+.skills span {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+
+  #contactDiv {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  form, #SocialMedia {
+    width: 100%;
+  }
+
+  .icon {
+    width: 90%;
+  }
+
+  .icon a i {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+
+/* Responsive Design For Mobile */
+@media (max-width: 499px) {
+body, html {
+    
+    scroll-padding-top: 100px;
+}
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0d1117; /* must have background! */
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .navbar .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #infoHeading h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #infoHeading p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #mainButtons {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  #mainButtons a {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  .internship {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    margin-bottom: 24px;
+  }
+
+  .internshipTab {
+    width: 90%;
+    height: auto;
+  }
+
+  #projectMain {
+    margin: 0 5%;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectTab {
+    width: 90%;
+    min-height: auto;
+  }
+
+  #techStack {
+  padding: 24px 0px;
+  text-align: center;
+}
+
+#techStack h2 {
+  font-size: 2.5rem;
+  color: #bb00ff;
+  margin-bottom: 24px;
+}
+
+.skillsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px; /* vertical and horizontal gap */
+  margin: 0 auto;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.skills {
+  background-color: var(--bg-card);
+  padding: 20px 25px;
+  border-radius: 15px;
+  width: 120px;
+  height: 90px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20),-5px -5px 10px rgba(0, 0, 0, 0.20);
+  transition: transform 0.3s ease;
+}
+
+.skills:hover {
+  transform: scale(1.05);
+}
+
+.skills i {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1e90ff;
+}
+
+.skills span {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+
+  #contactDiv {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  form, #SocialMedia {
+    width: 100%;
+  }
+
+  .icon {
+    width: 90%;
+  }
+
+  .icon a i {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+
