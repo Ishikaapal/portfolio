@@ -935,6 +935,7 @@ footer {
   body,
   html {
     scroll-padding-top: 50px;
+    scroll-padding-top: 50px;
   }
 
   .navbar {
