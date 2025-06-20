@@ -23,23 +23,30 @@
 
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./laptop.css">
 
 </head>
 
 <body>
-    <div id="container">
-        <nav class="navbar">
-            <div class="menu">
-                <a href="#container"><span>Home</span></a>
-                <a href="#infoHeading"><span>About Me</span></a>
-                <a href="#experience"><span>My Digital Space</span></a>
-                <a href="#projectMain"><span>My Projects</span></a>
-                <a href="#techStack"><span>Skills</span></a>
-                <a href="#contactMe"><span>Contact Me</span></a>
-            </div>
-        </nav>
+    <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#infoHeading"><span>Home</span></a>
+            <a href="#aboutMe"><span>About Me</span></a>
+            <a href="#experience"><span>My Digital Space</span></a>
+            <a href="#projectMain"><span>My Projects</span></a>
+            <a href="#techStack"><span>Skills</span></a>
+            <a href="#contactMe"><span>Contact Me</span></a>
+        </div>
+    </nav>
 
-        <div id="infoHeading">
+    <div id="container">
+
+        <div id="infoHeading" class="section hidden">
             <h1>Hi I'm Ishika Pal</h1>
             <p>Designing the future with AI-driven web innovation.</p>
             <div id="mainButtons">
@@ -47,47 +54,78 @@
                     <i class="bi bi-camera-reels-fill"></i>
                     <span>Watch Intro Video</span>
                 </a>
-                
-                <a href="https://drive.google.com/file/d/13H-_PVs38xYdSlTutPfNZgc6TAUEyPy5/view?usp=sharing"
+
+                <a href="https://drive.google.com/file/d/1JB0QeUkVi-SHLVAt5kRHNmiwcbW9d8PP/view?usp=sharing"
                     target="_blank">
                     <span>Download Resume</span>
                 </a>
             </div>
         </div>
 
-        <div id="experience">
+        <div id="aboutMe" class="section">
+            <h1 class="hidden">About Me</h1>
+            <p class="hidden">
+                Final-year B.Tech student in Electronics and Communication Engineering with a specialization in
+                Artificial
+                Intelligence. Proficient in Python, Django, and machine learning, with hands-on experience in developing
+                AI-based systems such as text emotion detection, voice-enabled assistants, and web-based task
+                management tools. Strong focus on real-time user engagement, intelligent system design, and building
+                scalable, efficient solutions.
+            </p>
+        </div>
+
+        <div id="experience" class="section">
             <h1>Experience & Internship</h1>
             <div class="internship">
-                <div class="internshipTab">
-                    <h3>Cyber Surukha Internship</h3>
-                    <p>A 40-hour cybersecurity internship under Microsoft & Tata, foucsing on ethical hacking
-                        fundamentals and online safety</p>
+                <div class="internshipTab hidden">
+                    <h3>Cybersecurity Fundamentals Certification</h3>
+                    <p>Successfully completed Microsoft’s 40-hour “Ready for Cyber Security” course, covering
+                        foundational
+                        topics in cybersecurity. Gained knowledge in network security, threat analysis, encryption,
+                        cyber hygiene,
+                        and secure practices for digital systems. Strengthened awareness of cyber threats and mitigation
+                        strategies,
+                        laying the groundwork for future specialization in cybersecurity and ethical hacking.</p>
                 </div>
-                <div class="internshipTab">
-                    <h3>Research Internship - 5G</h3>
-                    <p>A 40-hour cybersecurity internship under Microsoft & Tata, foucsing on ethical hacking
-                        fundamentals and online safety</p>
+                <div class="internshipTab hidden">
+                    <h3>Antenna Design Internship</h3>
+                    <p>Completed a focused internship on Antenna Design, gaining practical knowledge of electromagnetic
+                        theory,
+                        antenna parameters, and simulation techniques. Worked on designing and analyzing antennas using
+                        modern tools
+                        and techniques, with exposure to real-world applications in communication systems. Strengthened
+                        understanding
+                        of key concepts such as radiation patterns, gain, directivity, and impedance matching.</p>
                 </div>
 
             </div>
             <div class="internship">
-                <div class="internshipTab">
-                    <h3>AI & ML Internship</h3>
-                    <p>A 40-hour cybersecurity internship under Microsoft & Tata, foucsing on ethical hacking
-                        fundamentals and online safety</p>
+                <div class="internshipTab hidden">
+                    <h3>Python & Machine Learning Internship</h3>
+                    <p>Completed a hands-on internship focused on Python programming and machine learning techniques.
+                        Gained practical experience in data preprocessing, model building, and algorithm implementation
+                        using real-world datasets. Developed and evaluated machine learning models for classification
+                        and
+                        prediction tasks, strengthening skills in supervised learning and Python-based data analysis.
+                    </p>
                 </div>
-                <div class="internshipTab">
-                    <h3>SOft Skill-IIT Kharagpur</h3>
-                    <p>A 40-hour cybersecurity internship under Microsoft & Tata, foucsing on ethical hacking
-                        fundamentals and online safety</p>
+                <div class="internshipTab hidden">
+                    <h3>Soft Skill Development Certification</h3>
+                    <p>Completed an 8-week NPTEL course on Soft Skill Development, covering essential professional
+                        competencies
+                        such as effective communication, teamwork, time management, leadership, and interpersonal
+                        skills. Strengthened
+                        presentation abilities and emotional intelligence—key attributes for success in both technical
+                        and collaborative
+                        environments.</p>
                 </div>
             </div>
         </div>
 
-        <div id="projectMain">
+        <div id="projectMain" class="section">
             <h1> My Projects</h1>
             <div class="projects">
-                <div class="projectTab">
+                <div class="projectTab hidden">
                     <h2>The Weekly Muse</h2>
                     <p>
                         Built a weekly planner web app with Python using
@@ -110,7 +148,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="projectTab">
+                <div class="projectTab hidden">
                     <h2>Orion AI</h2>
                     <p>
                         Developed Orion AI, an advanced voice-activated
@@ -128,7 +166,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="projectTab">
+                <div class="projectTab hidden">
                     <h2>Text emotion Prediction System</h2>
                     <p>
                         Developed an advanced text emotion detection
@@ -147,7 +185,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="projectTab">
+                <div class="projectTab hidden">
                     <h2>TO Do List </h2>
                     <p>
                         A full-stack task management web application built using React (Frontend) and
@@ -176,59 +214,65 @@
             </div>
         </div>
 
-        <div id="techStack">
-            <h1>Teck Stack Summery</h1>
+        <div id="techStack" class="section">
+            <h1>Tech Stack Summery</h1>
             <div class="skillsRow">
-                <div class="skills">
-                    <i class="fa-brands fa-python"></i>
+                <div class="skills hidden">
+                    <img src="images/python.png." alt="Python">
                     <span>Python</span>
                 </div>
-                <div class="skills">
-                    <i class="fas fa-code"></i>
+                <div class="skills hidden">
+                    <img src="images/c++.png" alt="Python">
                     <span>C++</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-brands fa-html5"></i>
+                <div class="skills hidden">
+                    <img src="images/html.png" alt="Python">
                     <span>HTML5</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-brands fa-css3-alt"></i>
+                <div class="skills hidden">
+                    <img src="images/css.png" alt="Python">
                     <span>CSS3</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-brands fa-js"></i>
+                <div class="skills hidden">
+                    <img src="images/js.png" alt="Python">
                     <span>Java Script</span>
                 </div>
-            </div>
-            <div class="skillsRow">
-                <div class="skills">
-                    <i class="fa-solid fa-gears"></i>
+                <div class="skills hidden">
+                    <img src="images/bootstrap.png" alt="Python">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skills hidden">
+                    <img src="images/django.png" alt="Python">
                     <span>Django</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-solid fa-database"></i>
+                <div class="skills hidden">
+                    <img src="images/sql.png" alt="Python">
                     <span>MySQL</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-solid fa-laptop-code"></i>
+                <div class="skills hidden">
+                    <img src="images/jupyter.png" alt="Python">
                     <span>Jupyter</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-brands fa-github"></i>
+                <div class="skills hidden">
+                    <img src="images/github.png" alt="Python">
                     <span>Github</span>
                 </div>
-                <div class="skills">
-                    <i class="fa-brands fa-figma"></i>
+                <div class="skills hidden">
+                    <img src="images/figma.png" alt="Python">
                     <span>Figma</span>
+                </div>
+                <div class="skills hidden">
+                    <img src="images/canva.png" alt="Python">
+                    <span>Canva</span>
                 </div>
             </div>
 
         </div>
 
-        <div id="contactMe">
+        <div id="contactMe" class="section">
             <h1>Contact Me</h1>
             <div id="contactDiv">
-                <form action="https://formspree.io/f/xzzggvze" method="post">
+                <form action="https://formspree.io/f/xzzggvze" method="post" class="hidden">
                     <h2>Please Fill The Form </h2>
                     <div class="mb-3">
                         <input type="text" class="form-control" name="name" placeholder="Your Name" required>
@@ -244,8 +288,8 @@
                 </form>
 
                 <div id="SocialMedia">
-                    <h2>Connect With Me On Social Media</h2>
-                    <div class="iconRow">
+                    <h2>Connect With Me</h2>
+                    <div class="iconRow hidden">
                         <div class="icon">
                             <a href="https://github.com/Ishikaapal" target="_blank">
                                 <i class="fa-brands fa-github"></i>
@@ -259,7 +303,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="iconRow">
+                    <div class="iconRow hidden">
                         <div class="icon">
                             <a href="mailto:ishh.tech08@gmail.com">
                                 <i class="fa-solid fa-envelope"></i>
