@@ -29,7 +29,7 @@ export const HeroSection = () => {
             variants={imageVariants}
           >
             <img
-              src="/ishh.png"
+              src="/portfolio/ishh.png"
               alt="Ishika"
               className="w-[250px] sm:w-full h-auto object-cover"
             />
@@ -61,7 +61,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-20">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-20 mt-2">
         <span className="text-sm text-text-primary mb-2">Scroll</span>
         <Mouse className="h-6 w-6 text-accent" />
       </div>

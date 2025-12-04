@@ -18,7 +18,7 @@ export  const ProfileCard = () => {
               loading="lazy"
               className="absolute inset-0 h-full w-full rounded-[16px] bg-accent/30 object-cover contrast-85"
               alt="Ishika Pal"
-              src="/ishh.png"
+              src="/portfolio/ishh.png"
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
                 opacity: 1,
