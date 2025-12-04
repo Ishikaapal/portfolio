@@ -1,16 +1,104 @@
-# React + Vite
+🌐 Personal Portfolio – Ishika Pal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive personal portfolio website built using React, Vite, TailwindCSS, Framer Motion, and Three.js.
+This portfolio showcases my work, skills, certifications, and achievements with smooth animations, 3D elements, and a clean professional UI.
 
-Currently, two official plugins are available:
+🔗 Live Link: https://ishikaapal.github.io/portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+(Works after deployment)
 
-## React Compiler
+🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React 19
 
-## Expanding the ESLint configuration
+Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+TailwindCSS v4
+
+Framer Motion / Motion One
+
+GSAP
+
+React Three Fiber
+
+Three.js
+
+Lucide Icons & React Icons
+
+Lenis Smooth Scroll
+
+🎯 Features
+
+✨ Modern UI/UX
+
+Fully responsive layout
+
+Smooth animations and transitions
+
+Interactive 3D elements
+
+Fast load times using Vite
+
+Custom reusable components
+
+📌 Sections Included
+
+Hero Section
+
+About Me
+
+Skills
+
+Projects
+
+Certifications
+
+Contact Section
+
+🧭 Extra Enhancements
+
+Parallax & tilt card effects
+
+Smooth scrolling experience
+
+Clean component architecture
+
+Easy to customize
+
+![alt text](image.png)
+
+🔧 Installation & Setup
+
+1. Clone the repository
+git clone https://github.com/Ishikaapal/portfolio.git
+cd portfolio
+
+2. Install dependencies
+npm install
+
+3. Run the development server
+npm run dev
+
+4. Create production build
+npm run build
+
+🚀 Deployment (GitHub Pages)
+
+This project uses gh-pages for deployment.
+
+Deploy using:
+npm run deploy
+
+
+After deployment, your portfolio will be live at:
+
+👉 https://ishikaapal.github.io/portfolio
+
+🧑‍💻 Author – Ishika Pal
+    Frontend Developer
+
+🔗 GitHub: https://github.com/Ishikaapal
+
+📜 License
+
+This project is open-source and available under the MIT License.
