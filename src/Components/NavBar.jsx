@@ -3,7 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { ResponsiveMenu } from "./ResponsiveMenu";
-import { navItems } from "../assets/data/data";
+import { navItems } from "../assets/data";
 import { cn } from "../lib/util";
 
 export const NavBar = () => {

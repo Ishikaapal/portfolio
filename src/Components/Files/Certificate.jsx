@@ -1,5 +1,5 @@
 import Stack from "../ui/Stack";
-import { certificateData } from "../../assets/data/data";
+import { certificateData } from "../../assets/data";
 
 
 export const Certificate = () => {
@@ -8,7 +8,7 @@ export const Certificate = () => {
       randomRotation={true}
       sensitivity={180}
       sendToBackOnClick={false}
-      cardDimensions={{ width: 600, height: 400 }}
+      cardDimensions={{ width: 300, height: 400 }}
       cardsData={certificateData}
     />
   );

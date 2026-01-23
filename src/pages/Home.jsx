@@ -12,24 +12,18 @@ export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-text-primary overflow_x_hidden">
 
-        {/* Particle Background */}
-        <ParticleBackground />
+        {/* Particle Background
+        <ParticleBackground /> */}
 
         {/* NavBar Code */}
         <NavBar />
 
         <main>
-            <HeroSection />
-
-            <AboutSection />
-
-            <SkillsSection />
-
-            <ProjectsSection />
-
-            <CertificationSection />
-
-
+          <section><HeroSection /> </section>
+          <section><AboutSection /> </section>
+          <section><SkillsSection /></section>
+          <section><ProjectsSection /></section>
+          <section><CertificationSection /></section>
         </main>
 
         <Footer />

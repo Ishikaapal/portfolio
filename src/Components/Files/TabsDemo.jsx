@@ -2,7 +2,7 @@
 
 import { Tabs } from "../ui/tabs";
 
-import { projects } from "../../assets/data/data";
+import { projects } from "../../assets/data";
 
 export function TabsDemo() {
   const tabs = [

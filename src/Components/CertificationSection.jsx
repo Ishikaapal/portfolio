@@ -1,6 +1,5 @@
 
 import { Certificate } from "./Files/Certificate";
-import { TabsDemo } from "./Files/TabsDemo";
 
 export function CertificationSection() {
   

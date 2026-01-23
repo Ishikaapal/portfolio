@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { navItems } from "../assets/data/data";
+import { navItems } from "../assets/data";
 
 export const ResponsiveMenu = ({ open, setOpen }) => {
   return (

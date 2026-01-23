@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { frontend, tools } from "../assets/data/data";
+import { frontend, tools, softskills } from "../assets/data";
 
 export const SkillsSection = () => {
   const rows = [
     [
       { title: "Technologies And Language", data: frontend },
       { title: "Tools & other", data: tools },
-    ]
+    ],
   ];
 
   // Container variant for rows (stagger children)
@@ -34,7 +34,11 @@ export const SkillsSection = () => {
   // Skill item entrance (slight slide + fade) and works with whileHover transform
   const itemVariant = {
     hidden: { opacity: 0, x: -8 },
-    visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 220, damping: 20 } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: "spring", stiffness: 220, damping: 20 },
+    },
   };
 
   return (
@@ -70,8 +74,12 @@ export const SkillsSection = () => {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.2 }}
                   // subtle 3D hover + scale
-                  whileHover={{ scale: 1.02, rotateX: 3, transition: { type: "spring", stiffness: 220, damping: 16 } }}
-                  className="border-l-8 border-primary p-6 rounded-2xl border-1
+                  whileHover={{
+                    scale: 1.02,
+                    rotateX: 3,
+                    transition: { type: "spring", stiffness: 220, damping: 16 },
+                  }}
+                  className="border-l-8 border-r-8 border-primary p-6 rounded-2xl border-1
                     shadow-lg bg-gradient-to-br from-white/3 to-white/2 backdrop-blur-md
                     hover:shadow-lg transition-all will-change-transform hover:shadow-accent"
                 >
@@ -114,6 +122,63 @@ export const SkillsSection = () => {
               ))}
             </motion.div>
           ))}
+        </div>
+        <div className="flex items-center justify-center mt-8">
+          <motion.div
+            variants={cardVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            whileHover={{
+              scale: 1.02,
+              rotateX: 3,
+              transition: { type: "spring", stiffness: 220, damping: 16 },
+            }}
+            className="
+    border-l-8 border-r-8 border-primary border 
+    p-6 rounded-2xl shadow-lg
+    bg-gradient-to-br from-white/3 to-white/2 backdrop-blur-md
+    hover:shadow-accent transition-all will-change-transform
+  "
+          >
+            {/* Card Title */}
+            <h3 className="text-xl font-semibold text-primary mb-4">
+              Soft Skills
+            </h3>
+
+            {/* Skill Pills */}
+            <motion.div
+              className="flex flex-wrap gap-3 mb-16"
+              initial="hidden"
+              whileInView="visible"
+              transition={{ staggerChildren: 0.06 }}
+              viewport={{ once: true }}
+            >
+              {softskills.map((skill) => (
+                <motion.button
+                  key={skill.id}
+                  type="button"
+                  variants={itemVariant}
+                  whileHover={{ scale: 1.06, y: -3 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="
+          flex items-center gap-2 px-3 py-1 rounded-full
+          bg-primary/8 border border-primary/20 text-sm cursor-default
+          shadow-sm hover:shadow-md transition-all select-none
+        "
+                  style={{ WebkitTapHighlightColor: "transparent" }}
+                  aria-label={skill.name}
+                >
+                  <img
+                    src={skill.url}
+                    alt={skill.name}
+                    className="h-5 w-5 object-contain rounded-full"
+                  />
+                  <span className="text-text-primary">{skill.name}</span>
+                </motion.button>
+              ))}
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
