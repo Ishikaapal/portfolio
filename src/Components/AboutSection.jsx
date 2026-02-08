@@ -1,7 +1,8 @@
 import { cn } from "../lib/util";
 import { Briefcase, Code, User, Github, Linkedin, Youtube } from "lucide-react";
 import { ProfileCard } from "./Files/ProfileCard";
-import { PixelatedCanvasDemo } from "./PixelatedCanvasDemo";
+import resume from "../assets/Ishika_pal_resume_2026.pdf";
+
 
 export const AboutSection = () => {
   return (
@@ -16,12 +17,12 @@ export const AboutSection = () => {
             <ProfileCard />
            
           </div>
-          <div className="space-y-6 animate-floatY">
-            <h3 className="text-2xl font-semibold">
+          <div className="space-y-6 flex flex-col items-start justify-start">
+            <h3 className="text-3xl font-semibold">
               Passionate Front-end Developer
             </h3>
 
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-start">
               Final-year B.Tech student in Electronics & Communication
               Engineering with AI, passionate about building impactful tech that
               blends intelligence with real-world usability. Focused on creating
@@ -36,7 +37,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="resume/Pankaj_Kumar_Resume_2025.pdf"
+                href={resume}
                 download
                 target="_blank"
                 className={cn(
@@ -44,31 +45,28 @@ export const AboutSection = () => {
                   "text-primary hover:bg-primary/40 transition-all duration-300"
                 )}
               >
-                {" "}
                 Download Resume
               </a>
             </div>
             <div className="pt-8">
-              <h4 className="font-large mb-4">Connect With Me</h4>
+              <h4 className="text-xl font-mono mb-4">Connect With Me</h4>
               <div className="flex justify-center space-x-5">
-                <div className="p-3 rounded-full border border-foreground hover:bg-[#0A66C2] hover:border-0 hover:scale-110 transition-all duration-200">
-                  <a
+                <a
                     href="https://www.linkedin.com/in/ishikaapal/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="p-3 rounded-full border border-foreground hover:bg-[#0A66C2] hover:border-0 hover:scale-105 transition-all duration-200"
                   >
                     <Linkedin size={24} className="hover:scale-120" />
                   </a>
-                </div>
-                <div className="p-3 rounded-full border border-foreground hover:bg-white hover:text-black transition-all duration-200">
-                  <a
+                <a
                     href="https://github.com/ishikaapal"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="p-3 rounded-full border border-foreground hover:bg-white hover:text-black transition-all duration-200"
                   >
                     <Github size={24} className="hover:scale-120" />
-                  </a>
-                </div>
+                  </a> 
                 <div className="p-3 rounded-full border border-foreground hover:bg-[#FF0000] hover:border-0 hover:scale-110 transition-all duration-200">
                   <a
                     href="https://www.youtube.com/@IPTechWorriers"

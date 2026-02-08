@@ -130,6 +130,11 @@
     @apply bg-background text-text-primary transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  section{
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
 }
 
 @utility container {

@@ -41,7 +41,7 @@ export default function Stack({
   cardsData = [],
   animationConfig = { stiffness: 260, damping: 20 },
   sendToBackOnClick = false,
-}) {
+}) { 
   const [cards, setCards] = useState(
     cardsData.length
       ? cardsData

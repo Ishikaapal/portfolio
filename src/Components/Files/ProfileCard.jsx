@@ -1,4 +1,6 @@
 import { CometCard } from "@/components/ui/comet-card";
+import issssshhh from "../../assets/images/isssshhh.png";
+
 
 export  const ProfileCard = () => {
   return (
@@ -18,7 +20,7 @@ export  const ProfileCard = () => {
               loading="lazy"
               className="absolute inset-0 h-full w-full rounded-[16px] bg-accent/30 object-cover contrast-85"
               alt="Ishika Pal"
-              src="/portfolio/ishh.png"
+              src={issssshhh}
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
                 opacity: 1,

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Mouse } from "lucide-react";
+import issssshhh from "../assets/images/isssshhh.png";
+
 
 const imageVariants = {
   hidden: { opacity: 0, scale: 0.9, y: 30 },
@@ -13,10 +15,7 @@ const imageVariants = {
 
 export const HeroSection = () => {
   return (
-    <section
-      id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden "
-    >
+    <div id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden ">
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10 relative z-10">
         {/* Left: Text */}
@@ -29,7 +28,7 @@ export const HeroSection = () => {
             variants={imageVariants}
           >
             <img
-              src="/portfolio/ishh.png"
+              src={issssshhh}
               alt="Ishika"
               className="w-[250px] sm:w-full h-auto object-cover"
             />
@@ -65,6 +64,6 @@ export const HeroSection = () => {
         <span className="text-sm text-text-primary mb-2">Scroll</span>
         <Mouse className="h-6 w-6 text-accent" />
       </div>
-    </section>
+    </div>
   );
 };

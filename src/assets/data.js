@@ -43,12 +43,31 @@ export const projects = [
   {
     id: 1,
     title: "AKS India Group Website",
-    description: "A fully responsive, high-fidelity frontend clone of the AKS India Group website, engineered with React, TailwindCSS, and Framer Motion to deliver clean UI, smooth animations, and optimized user experience.",
-    image: "projects/project1.png",
-    tags: ["React", "Tailwind","Framer Motion"],
+    description: "A fully responsive, high-fidelity frontend clone of the AKS India Group website, built with React, TailwindCSS, and Framer Motion, delivering clean UI, smooth animations, and optimized user experience, hosted on Hostinger.",
+    image: "projects/aks.png",
+    tags: ["React", "Tailwind","Framer Motion","Hostinger"],
     demoUrl: "https://aksindgroup.com/",
     githubUrl: "#"
   },
+  {
+  id: 2,
+  title: "SwalagVyapaar Website",
+  description: "A fully responsive, modern website for SwalagVyapaar built with React, TailwindCSS, and Framer Motion. Features smooth animations, clean UI, and optimized performance, hosted on cPanel to showcase e-commerce, trade, and digital marketing services effectively.",
+  image: "projects/swalagvyapaar.png",
+  tags: ["React", "TailwindCSS", "Framer Motion", "Responsive Design","cPanel"],
+  demoUrl: "https://swalagvyapaar.com/",
+  githubUrl: "#"
+  },
+  {
+  id: 3,
+  title: "Prabodha By AKS",
+  description: "A fully responsive, modern website for AKS INDIA GROUP built with React, TailwindCSS, and Framer Motion. Features smooth animations, clean UI, and optimized performance, hosted on Hostinger to showcase Yoga, medit ation services effectively.",
+  image: "projects/prabodha.png",
+  tags: ["React", "TailwindCSS", "Framer Motion", "Responsive Design","Hostinger"],
+  demoUrl: "https://prabodha.com/",
+  githubUrl: "#"
+  },
+
   
 ];
 
