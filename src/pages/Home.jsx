@@ -1,32 +1,38 @@
-import {ParticleBackground} from "../Components/ParticleBackground"
-import {NavBar} from "../Components/NavBar"
-import { HeroSection } from "../Components/HeroSection";
-import {Footer} from "../Components/Footer"
-import { AboutSection } from "../components/AboutSection";
-import { SkillsSection } from "../Components/SkillsSection";
-import { ProjectsSection } from "../Components/ProjectsSection";
-import { CertificationSection } from "../Components/CertificationSection";
+import { NavBar } from "../Components/navbar/NavBar";
+
+import HeroSection from "../Components/main/HeroSection";
+import {AboutSection} from "../Components/main/AboutSection";
+import {SkillsSection} from "../Components/main/SkillsSection";
+import {ProjectsSection} from "../Components/main/ProjectsSection";
+
+import Footer from "../Components/footer/Footer";
+import ParallaxEffact from "../Components/main/ParallaxEffact";
+import Hobbies from "../Components/main/Hobbies";
+import Testimonial from "../Components/main/Testimonials";
+import Contact from "../Components/main/Contact";
+
 
 
 export const Home = () => {
   return (
-    <div className="min-h-screen bg-background text-text-primary overflow_x_hidden">
-
-        {/* Particle Background
-        <ParticleBackground /> */}
-
+    <>
         {/* NavBar Code */}
         <NavBar />
 
-        <main>
-          <section><HeroSection /> </section>
-          <section><AboutSection /> </section>
-          <section><SkillsSection /></section>
-          <section><ProjectsSection /></section>
-          <section><CertificationSection /></section>
-        </main>
+        {/* Main Data Code */}
+        <section id="hero"><HeroSection /> </section>
+          <ParallaxEffact type="service" typeText="Who Am I ?"/>
+          <section id="about" className="container"><AboutSection /> </section>
+          <SkillsSection />
+          <ParallaxEffact type="portfolio" typeText="My Work"/>
+          <section id="project" className="container"><ProjectsSection /></section>
+          <section id="intrests"className="container"><Hobbies /></section>
+          <section id="testimonial"className="container"><Testimonial /></section>
+          <ParallaxEffact type="service" typeText="Let's Connect"/>
+          <section id="contact"className="container"><Contact /></section>
 
+        {/* Footer Code */}
         <Footer />
-    </div>
+    </>
   );
 };

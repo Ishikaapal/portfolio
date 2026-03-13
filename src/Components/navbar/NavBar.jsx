@@ -3,8 +3,8 @@ import { ThemeToggle } from "./ThemeToggle";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { ResponsiveMenu } from "./ResponsiveMenu";
-import { navItems } from "../assets/data";
-import { cn } from "../lib/util";
+import { navItems } from "../../assets/data";
+import { cn } from "../../lib/util";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +40,7 @@ export const NavBar = () => {
         </div>
       </div>
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden shadow-sm cursor-pointer p-4 mx-auto flex flex-row items-center justify-end gap-4 bg-background w-full">
+      <div className="md:hidden shadow-sm cursor-pointer p-4 mx-auto flex flex-row items-center justify-between gap-4 bg-background w-full">
         <div>
           <ThemeToggle />
         </div>
