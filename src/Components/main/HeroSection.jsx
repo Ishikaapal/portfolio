@@ -48,7 +48,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="insideContainer grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         
         {/* --- TEXT CONTENT --- */}
         <motion.div
@@ -59,13 +59,13 @@ const HeroSection = () => {
         >
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold tracking-widest uppercase">
             <Terminal size={14} />
-            <span>Available for innovative projects</span>
+            <span className="websiteText">Available for innovative projects</span>
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-4">
             <h1 className="text-5xl md:text-8xl font-black text-text-primary tracking-tighter leading-[0.9]">
               Hi, I'm <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent to-primary">
+              <span className="websiteText">
                 Ishika Pal
               </span>
             </h1>

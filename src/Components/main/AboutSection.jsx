@@ -15,7 +15,7 @@ export const AboutSection = () => {
       title: (
         <div className="flex items-center gap-3">
           <FaBriefcase className="text-primary" />
-          Experience
+          <span className="websiteText">Experience</span>
         </div>
       ),
       content: (
@@ -34,11 +34,11 @@ export const AboutSection = () => {
               Jan 2026 – Present
             </p>
 
-            <h4 className="font-semibold mb-2 text-text-primary">
+            <h4 className="hidden md:flex font-semibold mb-2 text-text-primary">
               Key Achievements
             </h4>
 
-            <ul className="list-disc pl-5 text-secondary space-y-1">
+            <ul className="hidden md:flex flex-col list-disc pl-5 text-secondary space-y-1">
               <li>Developed and launched company portfolio and client websites</li>
               <li>Built responsive UI using React and Tailwind CSS</li>
               <li>Improved website performance and SEO optimization</li>
@@ -57,14 +57,14 @@ export const AboutSection = () => {
           <div className="border border-primary rounded-xl p-6 backdrop-blur-md shadow shadow-accent hover:shadow-md transition">
 
             <h3 className="text-xl font-bold text-text-primary">
-              Freelance Front-End Developer
+              Freelance Web Developer
             </h3>
 
             <p className="text-sm text-secondary mb-4">
               Sep 2025 – Jan 2026
             </p>
 
-            <ul className="list-disc pl-5 text-secondary space-y-1">
+            <ul className="hidden md:flex flex-col list-disc pl-5 text-secondary space-y-1">
               <li>Designed modern UI for small business websites</li>
               <li>Created responsive layouts for mobile and desktop</li>
             </ul>
@@ -73,7 +73,8 @@ export const AboutSection = () => {
               <span className="skillBadge">HTML</span>
               <span className="skillBadge">CSS</span>
               <span className="skillBadge">JavaScript</span>
-              <span className="skillBadge">Bootstrap</span>
+              <span className="skillBadge">React</span>
+              <span className="skillBadge">Tailwind CSS</span>
             </div>
 
           </div>
@@ -89,7 +90,7 @@ export const AboutSection = () => {
               June 2025 – Mar 2026
             </p>
 
-            <ul className="list-disc pl-5 text-secondary space-y-1">
+            <ul className="hidden md:flex flex-col list-disc pl-5 text-secondary space-y-1">
               <li>Developed full-stack applications using Django & React</li>
               <li>Built REST APIs and authentication systems</li>
             </ul>
@@ -111,7 +112,7 @@ export const AboutSection = () => {
       title: (
         <div className="flex items-center gap-3">
           <FaGraduationCap className="text-primary" />
-          Education
+          <span className="websiteText">Education</span>
         </div>
       ),
 
@@ -150,7 +151,7 @@ export const AboutSection = () => {
       title: (
         <div className="flex items-center gap-3">
           <FaUserFriends className="text-primary" />
-          Let's Connect
+          <span className="websiteText">Let's Connect</span>
         </div>
       ),
 

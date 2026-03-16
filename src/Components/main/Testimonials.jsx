@@ -5,8 +5,9 @@ import TestimonialCard from "./TestimonialCards";
 
 const testimonials = [
   {
-    name: "Deeksha",
-    role: "Founder, Digitalsbydee",
+    name: "Anil Kumar Sadhak",
+    role: "AKS INDIA GROUP HEAD",
+    href : "https://prabodhaaks.com/",
     content:
       "The Prabodha website truly reflects the essence of yoga and mindfulness. The UI is beautifully designed, elegant, and calming — exactly what we envisioned. Even as a static site, it feels premium and meaningful.",
     project: "prabodhaaks.com",
@@ -15,17 +16,19 @@ const testimonials = [
   {
     name: "Deeksha",
     role: "Founder, Digitalsbydee",
+    href : "https://aksindgroup.com/",
     content:
       "Excellent work on the AKS Ind Group website. Your professionalism and attention to detail ensured the design aligned perfectly with our brand vision. Smooth coordination and timely delivery throughout.",
     project: "aksindgroup.com",
     color: "rgba(139, 92, 246, 0.15)",
   },
   {
-    name: "Pankaj",
-    role: "Co-Founder ,IP Vertex",
+    name: "Abhishek Tiwari",
+    role: "CEO",
+    href : "https://swalagvyapaar.com/",
     content:
-      "Working on these projects allowed for a deep dive into aesthetic minimalism. The goal was to balance white space with functional elegance, ensuring the brand's voice was never lost in the code.",
-    project: "Elevare",
+      "Ishika did a great job developing the website. Her understanding of modern UI design and responsiveness is impressive.The project was delivered professionally, and I truly appreciate her dedication and work.",
+    project: "swalagvyapaar.com",
     color: "rgba(236, 72, 153, 0.15)",
   },
 ];
@@ -53,7 +56,7 @@ const Testimonial = () => {
                >
                  <h1 className="text-4xl md:text-6xl font-black text-text-primary tracking-tighter">
                    What Our{" "}
-                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+                   <span className="websiteText">
                      Client Says
                    </span>
                  </h1>

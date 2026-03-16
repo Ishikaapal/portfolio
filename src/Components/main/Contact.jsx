@@ -61,7 +61,7 @@ const Contact = () => {
           >
             <div>
               <h2 className="text-5xl md:text-7xl font-black text-text-primary tracking-tighter mb-6">
-                Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-500 text-italic font-light">Connect</span>
+                Let's <span className="websiteText">Connect</span>
               </h2>
               <p className="text-secondary text-lg leading-relaxed max-w-md">
                 Have a project in mind or just want to chat about tech? I'm always open to new opportunities and collaborations.
@@ -189,9 +189,9 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-max px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full backdrop-blur-md flex items-center gap-2">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-              <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-[0.2em]">Available for new projects</span>
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-max px-4 py-2 bg-background border border-accent rounded-full backdrop-blur-md flex items-center gap-2">
+              <div className="w-4 h-4 bg-gradient-to-r from-accent via-accent to-primary rounded-full animate-pulse" />
+              <span className="text-sm font-bold websiteText ">Available for new projects</span>
             </div>
           </motion.div>
         </div>

@@ -22,7 +22,7 @@ const ParallaxEffect = ({ type,typeText }) => {
       {/* TEXT */}
       <motion.h1
         style={{ y: yText }}
-        className="text-primary text-5xl md:text-7xl font-bold z-0 text-center px-4"
+        className="websiteText text-5xl md:text-7xl font-bold z-0 text-center"
       >
         {typeText}
       </motion.h1>

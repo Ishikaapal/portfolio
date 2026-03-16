@@ -63,7 +63,7 @@ const TestimonialCard = ({ data }) => {
               <p className="text-primary text-sm font-medium">{data.role}</p>
             </div>
             <div className="text-[10px] uppercase tracking-widest text-primary font-bold">
-              {data.project}
+              <a target="_blank" href={data.href}>{data.project}</a>
             </div>
           </div>
         </div>

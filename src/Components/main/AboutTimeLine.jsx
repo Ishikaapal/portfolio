@@ -36,7 +36,7 @@ export const Timeline = ({
           viewport={{ once: true }}
           className="text-4xl md:text-6xl font-black text-text-primary tracking-tighter leading-tight"
         >
-          Passionate <span className="text-accent">Front-end Developer</span>
+          Passionate <span className="websiteText">Web Developer</span>
         </motion.h2>
 
         {/* Clean, Readable Paragraph */}

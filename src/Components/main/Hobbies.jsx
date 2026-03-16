@@ -72,7 +72,7 @@ const Hobbies = () => {
         >
           <h1 className="text-4xl md:text-6xl font-black text-text-primary tracking-tighter">
             Beyond{"  "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+            <span className="websiteText">
               The Pixels
             </span>
           </h1>

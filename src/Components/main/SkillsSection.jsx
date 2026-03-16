@@ -26,16 +26,20 @@ const imageLogos = [
   return (
     <>
     {/* --- Heading Section --- */}
-      <div className="w-full ipContainer flex flex-col items-center z-20 pb-20">
-        <div className="text-center space-y-2">
-        <h1 className="ipHeading">
-                My <span className="ipHeadingSpan">Skills
-                </span>
-              </h1> 
-              <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
-              <p className="ipHeadingP">My Tech Stack Details</p>
-        </div>        
-      </div>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-20 space-y-4"
+        >
+          <h1 className="text-4xl md:text-6xl font-black text-text-primary tracking-tighter">
+            Skills{" "} 
+            <span className="websiteText">
+              & Technologies
+            </span>
+          </h1>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-accent to-blue-600 mx-auto rounded-full shadow-[0_0_15px_rgba(6,182,212,0.5)]"></div>
+        </motion.div>
 
       <div style={{ height: '240px', position: 'relative', overflow: 'hidden'}}>
       {/* Basic horizontal loop */}
