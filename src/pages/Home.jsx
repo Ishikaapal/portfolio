@@ -10,6 +10,7 @@ import ParallaxEffact from "../Components/main/ParallaxEffact";
 import Hobbies from "../Components/main/Hobbies";
 import Testimonial from "../Components/main/Testimonials";
 import Contact from "../Components/main/Contact";
+import ProjectTest from "../Components/main/ProjectTest";
 
 
 
@@ -25,7 +26,8 @@ export const Home = () => {
           <section id="about" className="container"><AboutSection /> </section>
           <SkillsSection />
           <ParallaxEffact type="portfolio" typeText="My Work"/>
-          <section id="project" className="container"><ProjectsSection /></section>
+          {/* <section id="project" className="container"><ProjectsSection /></section> */}
+          <div id="project"><ProjectTest /></div>
           <section id="intrests"className="container"><Hobbies /></section>
           <section id="testimonial"className="container"><Testimonial /></section>
           <ParallaxEffact type="service" typeText="Let's Connect"/>

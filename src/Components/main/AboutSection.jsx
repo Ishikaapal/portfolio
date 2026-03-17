@@ -74,7 +74,7 @@ export const AboutSection = () => {
               <span className="skillBadge">CSS</span>
               <span className="skillBadge">JavaScript</span>
               <span className="skillBadge">React</span>
-              <span className="skillBadge">Tailwind CSS</span>
+              <span className="skillBadge">Tailwind CSS </span>
             </div>
 
           </div>
